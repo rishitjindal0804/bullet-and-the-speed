@@ -1,0 +1,22 @@
+function deform(){
+
+  if(wall.x-car.x < (car.width+wall.width)/2)
+  {
+  bullet.velocityX=0
+  var deformation=0.5 * weigth * speed * speed/22509;
+  
+  if(deformation>180){
+   bullet.shapeColor=color(255,0,0);
+  }
+  
+  if(deformation<180 && deformation>100){
+    bullet.shapeColor=color(230,230,00);
+  }
+  
+  if(deformation<100){
+    bullet.shapeColor=color(0,255,0);
+   }
+   
+  } 
+
+}
